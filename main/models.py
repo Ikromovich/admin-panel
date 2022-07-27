@@ -34,8 +34,8 @@ class Oylar(models.Model):
 
 class Talaba(models.Model):
     Qilingan = 1
-    Qarzi_bor =2
-    Qilinmagan= 3
+    Qarzi_bor = 2
+    Qilinmagan = 3
 
     guruh =models.ForeignKey(Guruh,null=True,on_delete=models.CASCADE)
     oy = models.ForeignKey(Oylar,null=True,on_delete=models.CASCADE)

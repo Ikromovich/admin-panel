@@ -216,22 +216,7 @@
                     <td>{{ i.text }}</td>
                     <td>{{ i.age }}</td>
                     <td>{{ i.number }}</td>
-                    {% if i.price == 1 %}
-                        <td>
-                             <button type="button" class="btn btn-success">Tulov bo'ldi</i>
-                            </button>
-                        </td>
-                    {% elif i.price==2 %}
-                        <td>
-                            <button type="button" class="btn btn-warning">Qarzi bor</i>
-                            </button>
-                        </td>
-                    {% else %}
-                        <td>
-                            <button type="button" class="btn btn-danger">Qilinmagan</i>
-                            </button>
-                        </td>
-                    {% endif %}
+                    <td>{{ i.number }}</td>
                     <td style="width:8%">
                         <a href="#" style="margin-left: 18%;">
                             <button type="button" class="btn btn-danger"><i class="bi bi-trash"></i>
@@ -326,15 +311,6 @@
 
                         </ul>
                         {% endfor %}
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="pages/UI/general.html" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>General</p>
-                                </a>
-                            </li>
-
-                        </ul>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">
